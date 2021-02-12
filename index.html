@@ -55,18 +55,24 @@ hr {
 .content img {
 	float: none;
 	margin-bottom: 0;
-    vertical-align: bottom;
-    justify-content: stretch;    
+  vertical-align: bottom;
+  justify-content: stretch;    
       
 }
-
+.col{
+  margin-left: 1em;
+}
+.container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
 h1 {
     text-align: left;
     font-family: 'NeueMontreal';
     font-style: normal;
     font-weight: normal;
-    font-size: 0.6rem;
-    line-height: 0.9rem;
+    font-size: 1rem;
+    line-height: 1rem;
     letter-spacing: -.005rem;
     color: #101010;
 }
@@ -81,26 +87,47 @@ margin-top: -50px;
 margin-bottom: -50px;
 }
 
+#carrusel-footer{
+  background-color:firebrick;
+    font-family: 'NeueMontreal';
+    font-size: 50px;
+}
+.ham{
+  font-size: 200px;
+  padding-top: -20px;
+}
+
 </style>
   
 </head>
 <body>
 <div class="content">
-      <marquee behavior="scroll" direction="left" scrollamount="50" onmouseover="this.stop();" onmouseout="this.start();">
-        <div id="carrusel">LUISFERPALO</div>
+      <marquee behavior="scroll" direction="left" scrollamount="50" onmousedown="this.stop();" onmouseup="this.start();">
+        <div id="carrusel"><span class="ham"></span>LUISFERPALO<span class="ham"></span></div>
       </marquee>
-<div>	
-  <h1>hi, i am underconstruction.<br> Meanwhile, you can find me on instagram <i>@luisferpalo</i>  </h1>
+      <div class="container">
+          <div class="row">
+            <div class="col">
+            <div>	
+            <h1>hi, i am underconstruction.<br> Meanwhile, you can find me on instagram <i>@luisferpalo</i>  </h1>
+            </div>
+          
+          </div>
+          <div class="col">
+      
+          </div>
+        </div>
+    </div>
+
 </div>
-
-
-
   
   
   </div>
 
   <footer class="footer">
-    LUISFERPALO
+    <marquee behavior="scroll" direction="left" scrollamount="50" onmousedown="this.stop();" onmouseup="this.start();">
+      <div id="carrusel-footer">+34 603 52 48 70 hello@luisferpalo.com</div>
+    </marquee>
   </footer>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </body>
