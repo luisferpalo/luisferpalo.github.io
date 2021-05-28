@@ -1,139 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
 
-    <link rel="icon" 
-          type="image/png" 
-          href="media/logo.png" />
-  <meta charset="utf-8">
-  <title>LUISFERPALO</title>
-  <link href="style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="w3.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>W3.CSS Template</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
 <style>
-  @font-face {
-    font-family: NeueMontreal;
-    src: url(fonts/NeueMontreal-Regular.ttf);
-  }
-  
 
-html {
-    height: 100%;
-  }
-
-  body {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    margin: 0;
-  }
-  .footer {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color:firebrick;
-    font-family: 'NeueMontreal';
-  }
-img {
-	border: 0;
-	padding: 0;
-}
-
-ul,
-ol {
-	margin: 0;
-	padding: 0 0 0 1em;
-}
-
-blockquote {
-	margin: 0;
-	padding: 0 0 0 2em;
-}
-
-hr {
-	background: rgba(0, 0, 0, 0.86);
-	border: 0;
-	height: 1px;
-	display: block;
-}
-
-.content img {
-	float: none;
-	margin-bottom: 0;
-  vertical-align: bottom;
-  justify-content: stretch;    
-      
-}
-
-.container{
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-h1 {
-    text-align: left;
-    font-family: 'NeueMontreal';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 3rem;
-    line-height: 2.7rem;
-    letter-spacing: -.005rem;
-    color: #101010;
-}
-
+img {margin-bottom: -7px}
 #carrusel{
 height: 100%;
-font-size: 300px;
+font-size: 50px;
 width: auto;
 color: #101010;
 font-family:'NeueMontreal';
-margin-top: -50px;
-margin-bottom: -50px;
 }
 
-#carrusel-footer{
-  background-color:firebrick;
+#carrusel-footer, p{
+    line-height: 50px;
     font-family: 'NeueMontreal';
     font-size: 50px;
+    padding: 0;
 }
-.ham{
-  font-size: 200px;
-  padding-top: -20px;
-}
-
+@font-face {
+    font-family: NeueMontreal;
+    src: url(fonts/NeueMontreal-Regular.ttf);
+  }
 </style>
-  
-</head>
-<body>
-<div class="content">
-      <marquee behavior="scroll" direction="left" scrollamount="50" onmousedown="this.stop();" onmouseup="this.start();">
-        <div id="carrusel" class="w3-row"><span class="ham"></span>LUISFERPALO<span class="ham"></span></div>
-      </marquee>
-      
-          <div class="w3-row">
-          
-            <div class="w3-col  w3-container" style="width:20%" >	
-            </div>
-            <div class="w3-col w3-container" style="width:60%" >	
-            <h1>Hola, Soy un diseñador e ilustrador en Madrid, España. <br>Mi trabajo busca explotar las herramientas de comunicación y llevarlas a otro nivel.<br> Mientras, puedes ver mi trabajo en IG: <a href="https://www.instagram.com/luisferpalo/"> <i>@luisferpalo</i></a>  </h1>
-           </div> 
-           <div class="w3-col w3-container" style="width:20%" >	
-          </div>
-          
-          </div>
-         
-       
-    </div>
+</head><body>
 
+<!-- Sidebar 
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display: none; padding-top: 150px; width: 100%;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="https://www.w3schools.com/w3css/tryw3css_templates_photo.htm#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="https://www.w3schools.com/w3css/tryw3css_templates_photo.htm#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+    <a href="https://www.w3schools.com/w3css/tryw3css_templates_photo.htm#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+    <a href="https://www.w3schools.com/w3css/tryw3css_templates_photo.htm#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  </div>
+</nav>-->
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+
+<header class="w3-center w3-margin-bottom">
+  <marquee behavior="scroll" direction="left" scrollamount="50" onmousedown="this.stop();" onmouseup="this.start();">
+    <div id="carrusel" class="w3-row"><span class="ham"></span>LUISFERPALO +34 603 52 48 70 hello@luisferpalo.com<span class="ham"></span></div>
+  </marquee>
+</header>
 </div>
-  
-  
+
+<div class="w3-row">
+  <div class="w3-col m3 w3-center"><p></p></div>
+  <div class="w3-col m6 w3-center"><p>Hola, Soy un diseñador e ilustrador en Madrid, España. <br>Mi trabajo busca explotar las herramientas de comunicación y llevarlas a otro nivel.<br> Mientras, puedes ver mi trabajo en IG: <a href="https://www.instagram.com/luisferpalo/"> <i>@luisferpalo</i></a> </p></div>
+  <div class="w3-col m3 w3-center"><p></p></div>
+</div>
+<!-- Photo Grid 
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="./W3.CSS Template_files/rocks.jpg" style="width:100%">
+    <img src="./W3.CSS Template_files/sound.jpg" style="width:100%">
+    <img src="./W3.CSS Template_files/woods.jpg" style="width:100%">
+    <img src="./W3.CSS Template_files/rock.jpg" style="width:100%">
+    <img src="./W3.CSS Template_files/nature.jpg" style="width:100%">
+    <img src="./W3.CSS Template_files/mist.jpg" style="width:100%">
   </div>
 
-  <footer class="footer">
-    <marquee behavior="scroll" direction="left" scrollamount="50" onmousedown="this.stop();" onmouseup="this.start();">
-      <div class="w3-row" id="carrusel-footer">+34 603 52 48 70 hello@luisferpalo.com</div>
-    </marquee>
-  </footer>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-</body>
-</html>
+  <div class="w3-third">
+    <img src="./W3.CSS Template_files/coffee.jpg" style="width:100%">
+    <img src="./W3.CSS Template_files/bridge.jpg" style="width:100%">
+    <img src="./W3.CSS Template_files/notebook.jpg" style="width:100%">
+    <img src="./W3.CSS Template_files/london.jpg" style="width:100%">
+    <img src="./W3.CSS Template_files/rocks.jpg" style="width:100%">
+    <img src="./W3.CSS Template_files/avatar_g.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="./W3.CSS Template_files/mist.jpg" style="width:100%">
+    <img src="./W3.CSS Template_files/workbench.jpg" style="width:100%">
+    <img src="./W3.CSS Template_files/gondol.jpg" style="width:100%">
+    <img src="./W3.CSS Template_files/skies.jpg" style="width:100%">
+    <img src="./W3.CSS Template_files/lights.jpg" style="width:100%">
+    <img src="./W3.CSS Template_files/workshop.jpg" style="width:100%">
+  </div>
+</div>
+-->
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-xlarge" style="margin-top:128px"> 
+  <marquee behavior="scroll" direction="left" scrollamount="50" onmousedown="this.stop();" onmouseup="this.start();">
+    <div class="w3-row w3-center" id="carrusel-footer">+34 603 52 48 70 hello@luisferpalo.com</div>
+  </marquee>
+</footer>
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+</body></html>
