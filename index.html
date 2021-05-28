@@ -64,9 +64,7 @@ hr {
   justify-content: stretch;    
       
 }
-.col{
-  margin-left: 1em;
-}
+
 .container{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -108,7 +106,7 @@ margin-bottom: -50px;
 <body>
 <div class="content">
       <marquee behavior="scroll" direction="left" scrollamount="50" onmousedown="this.stop();" onmouseup="this.start();">
-        <div id="carrusel"><span class="ham"></span>LUISFERPALO<span class="ham"></span></div>
+        <div id="carrusel" class="w3-row"><span class="ham"></span>LUISFERPALO<span class="ham"></span></div>
       </marquee>
       
           <div class="w3-row">
@@ -133,7 +131,7 @@ margin-bottom: -50px;
 
   <footer class="footer">
     <marquee behavior="scroll" direction="left" scrollamount="50" onmousedown="this.stop();" onmouseup="this.start();">
-      <div id="carrusel-footer">+34 603 52 48 70 hello@luisferpalo.com</div>
+      <div class="w3-row" id="carrusel-footer">+34 603 52 48 70 hello@luisferpalo.com</div>
     </marquee>
   </footer>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
