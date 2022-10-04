@@ -3,17 +3,41 @@
     src: url(fonts/NeueMontreal-Regular.ttf);
   }
   
-
 html {
     height: 100%;
   }
+#mySidebar{
+  background-color: red;
+}
+header{
+  background-color: red;
+}
+#carrusel{
+  height: 100%;
+  font-size: 4em;
+  width: auto;
+  margin-bottom: -.1em;
+  margin-top: -.1em;
+  font-family:'NeueMontreal';
+color: #ffffff;
+}
 
+#carrusel-footer, p{
+  font-size: 1em;
+  line-height: 1em;
+    font-family: 'NeueMontreal';
+    padding-left: 2em;
+    padding-right: 2em;
+}
+#info{
+  font-family: 'NeueMontreal';
+  padding: 0;
+}
   body {
     min-height: 100%;
     display: grid;
     grid-template-rows: 1fr auto;
     margin: 0;
-    background-color: white;
   }
   .footer {
     grid-row-start: 2;
@@ -21,10 +45,7 @@ html {
     background-color:firebrick;
     font-family: 'NeueMontreal';
   }
-img {
-	border: 0;
-	padding: 0;
-}
+
 
 ul,
 ol {
@@ -43,12 +64,16 @@ hr {
 	height: 1px;
 	display: block;
 }
-
+img {
+	border: 0;
+	padding: 0;
+  margin-bottom: -7px;
+}
 .content img {
 	float: none;
 	margin-bottom: 0;
-    vertical-align: bottom;
-    justify-content: stretch;    
+  vertical-align: bottom;
+  justify-content: stretch;    
       
 }
 
@@ -57,18 +82,17 @@ h1 {
     font-family: 'NeueMontreal';
     font-style: normal;
     font-weight: normal;
-    font-size: 0.6rem;
+    font-size: 0.3rem;
     line-height: 0.9rem;
     letter-spacing: -.005rem;
-    color: #101010;
+}
+.menu{
+  font-style: normal;
+  color: white; 
+  font-family: 'NeueMontreal';
+  font-size: 3rem;
 }
 
-#carrusel{
-height: 100%;
-font-size: 300px;
-width: auto;
-color: #101010;
-font-family:'NeueMontreal';
-margin-top: -50px;
-margin-bottom: -50px;
+a:link{
+  text-decoration: none;
 }
