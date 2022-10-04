@@ -13,6 +13,7 @@ html {
     display: grid;
     grid-template-rows: 1fr auto;
     margin: 0;
+    background-color: white;
   }
   .footer {
     grid-row-start: 2;
