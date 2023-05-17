@@ -1,6 +1,6 @@
 @font-face {
   font-family: Personalized;
-  src: url(fonts/UniversLTStd.woff2);
+  src: url(fonts/Inter-Regular.ttf);
 }
 html {
   font-size: 62.5%;
@@ -47,7 +47,7 @@ body {
       padding-right: 30px; } }
 
 h1 {
-  font-size: 4.8rem; 
+  font-size: 6rem; 
   letter-spacing: -.2rem;}
 
 h2 {
@@ -93,7 +93,7 @@ h6,
   margin-top: 0; }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.3em; 
   letter-spacing: -.05rem;}
