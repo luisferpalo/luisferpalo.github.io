@@ -3,7 +3,7 @@
   src: url(fonts/SF-Pro-Display-Regular.otf);
 }
 html {
-  font-size: 62.5%;
+  font-size: 50%;
   overflow-x: hidden;}
 
 body {
@@ -14,7 +14,7 @@ body {
   font-family: 'Personalized';
   font-weight: 300;
   font-size: 1.6rem;
-  padding: 15px;}
+}
   body:after {
     position: absolute;
     content: "";
@@ -30,7 +30,7 @@ body {
     background: linear-gradient(to right, #f5af19, #f12711);*/ }
 
 .boxed-page {
-  margin: 0 auto;
+  margin: auto;
   margin-top: 6rem;
   margin-bottom: 6rem;
   position: relative;
@@ -91,13 +91,16 @@ h6,
 .h5,
 .h6 {
   font-family: 'Personalized';
-  margin-top: 0; }
+  margin-top: 0; 
+
+}
 
 p {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.6em; 
-  letter-spacing: -.05rem;
+  letter-spacing: -.05rem; 
+  margin: .5rem;
   color: #797979;
 }
 
@@ -534,7 +537,8 @@ footer {
   .grid-item {
     width: 100%; }
   .card-deck {
-    flex-direction: column; } }
+    flex-direction: column; }
+ }
 .row{
   margin:0;
 
