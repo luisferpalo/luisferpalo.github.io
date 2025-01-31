@@ -17,6 +17,26 @@
   <link rel="stylesheet" href="css/aos.css">
     
   <style>
+     body {
+  height: 100%;
+  min-height: 100%;
+  cursor: none;
+}
+
+#invertedcursor {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  top: var(--y, 0);
+  left: var(--x, 0);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  mix-blend-mode: difference;
+  transition: transform .2s;
+  pointer-events: none;
+}
   .bg-img {
        background-image: url(./img/webp/img.webp);
    }
@@ -219,6 +239,20 @@
 <script src="js/bootstrap.bundle.min.js" async></script>
 <script src="js/aos.js"></script>
 <script>
+  document.body.onmousemove = function(e) {
+  document.documentElement.style.setProperty (
+    '--x', (
+      e.clientX+window.scrollX
+    )
+    + 'px'
+  );
+  document.documentElement.style.setProperty (
+    '--y', (
+      e.clientY+window.scrollY
+    ) 
+    + 'px'
+  );
+}
  AOS.init({
     duration: 1000, // Añade una animación más suave
     delay: 100, // Retraso en la animación
