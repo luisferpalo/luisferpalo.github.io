@@ -1,252 +1,703 @@
-<!doctype html>
-<html class="h-100" lang="en">
-
-  <head>
-    <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <meta name="description" content="UX/UI Graphic designer based in Madrid, Spain">
-  <meta name="author" content="luisfer palo">
-  <meta name="generator" content="Eleventy v2.0.1">
-  <meta name="HandheldFriendly" content="true">
-  <title>luisferpalo</title>
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="96x96" href=".t/img/favicon.png">
-
-
-  <link rel="stylesheet" href="css/min/theme.css">
-  <link rel="stylesheet" href="css/aos.css">
-
-     <style>
-      body {
-  height: 100%;
-  min-height: 100%;
-  cursor: none;
-}
-
-#invertedcursor {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background: #fff;
-  border-radius: 50%;
-  top: var(--y, 0);
-  left: var(--x, 0);
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  mix-blend-mode: difference;
-  transition: transform .2s;
-  pointer-events: none;
-}
-      .bg-img {
-        background-image: url(./img/webp/bck2.webp);
-      }
-  
-      @media (max-width: 576px) {
-        .bg-img {
-          background-image: url(./img/webp/bck2_xs.webp);
-        }
-      }
-  
-      @media (max-width: 992px) {
-        .bg-img {
-          background-image: url(./img/webp/bck2_xs.webp);
-        }
-      }
-  
-      @media (max-width: 1440px) {
-        .bg-img {
-          background-image: url(./img/webp/bck2_md.webp);
-        }
-      }
-  
-      @media (min-width: 1441px) {
-        .bg-img {
-          background-image: url(./img/webp/bck2_xl.webp);
-        }
-      }
-  
-      /* Font Faces */
-      @font-face {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 300;
-        font-display: swap;
-        src: local(''), url('./fonts/inter-v12-latin-300.woff2') format('woff2'), url('./fonts/inter-v12-latin-300.woff') format('woff');
-      }
-  
-      @font-face {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: local(''), url('./fonts/inter-v12-latin-500.woff2') format('woff2'), url('./fonts/inter-v12-latin-500.woff') format('woff');
-      }
-  
-      @font-face {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: local(''), url('./fonts/inter-v12-latin-700.woff2') format('woff2'), url('./fonts/inter-v12-latin-700.woff') format('woff');
-      }
-    </style>
-
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+		<title>luisferpalo &#8211; Multidisciplinary designer based in Madrid, Spain</title>
+<meta name="robots" content="max-image-preview:large">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="alternate" type="application/rss+xml" title="luisferpalo &raquo; Feed" href="./feed/index.html">
+<link rel="alternate" type="application/rss+xml" title="luisferpalo &raquo; Comments Feed" href="./comments/feed/index.html">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":".\/\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🐦‍⬛","🐦​⬛")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<link rel="stylesheet" id="hfe-widgets-style-css" href="./wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=2.2.2" media="all">
+<link rel="stylesheet" id="gum-elementor-addon-css" href="./wp-content/plugins/gum-elementor-addon/css/style.css?ver=6.7.2" media="all">
+<style id="wp-emoji-styles-inline-css">img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}</style>
+<style id="global-styles-inline-css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}</style>
+<link rel="stylesheet" id="ce-style-css" href="./wp-content/plugins/cowidgets-elementor-addons/assets/css/cowidgets.css?ver=1.0.10" media="all">
+<link rel="stylesheet" id="feather-css" href="./wp-content/plugins/cowidgets-elementor-addons/assets/css/lib/feather.css?ver=1.0.0" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="./wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.28.0" media="all">
+<link rel="stylesheet" id="elementor-post-3742-css" href="./wp-content/uploads/elementor/css/post-3742.css?ver=1742488732" media="all">
+<link rel="stylesheet" id="e-animation-fadeIn-css" href="./wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css?ver=3.28.0" media="all">
+<link rel="stylesheet" id="widget-heading-css" href="./wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.28.0" media="all">
+<link rel="stylesheet" id="widget-image-css" href="./wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.28.0" media="all">
+<link rel="stylesheet" id="e-animation-float-css" href="./wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-float.min.css?ver=3.28.0" media="all">
+<link rel="stylesheet" id="widget-divider-css" href="./wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.28.0" media="all">
+<link rel="stylesheet" id="widget-icon-list-css" href="./wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.28.0" media="all">
+<link rel="stylesheet" id="elementor-post-3848-css" href="./wp-content/uploads/elementor/css/post-3848.css?ver=1742488757" media="all">
+<link rel="stylesheet" id="hfe-style-css" href="./wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=2.2.2" media="all">
+<link rel="stylesheet" id="cute-alert-css" href="./wp-content/plugins/metform/public/assets/lib/cute-alert/style.css?ver=3.9.6" media="all">
+<link rel="stylesheet" id="text-editor-style-css" href="./wp-content/plugins/metform/public/assets/css/text-editor.css?ver=3.9.6" media="all">
+<link rel="stylesheet" id="hello-elementor-css" href="./wp-content/themes/hello-elementor/style.min.css?ver=3.3.0" media="all">
+<link rel="stylesheet" id="hello-elementor-theme-style-css" href="./wp-content/themes/hello-elementor/theme.min.css?ver=3.3.0" media="all">
+<link rel="stylesheet" id="hello-elementor-header-footer-css" href="./wp-content/themes/hello-elementor/header-footer.min.css?ver=3.3.0" media="all">
+<link rel="stylesheet" id="hfe-elementor-icons-css" href="./wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.34.0" media="all">
+<link rel="stylesheet" id="hfe-icons-list-css" href="./wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3" media="all">
+<link rel="stylesheet" id="hfe-social-icons-css" href="./wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0" media="all">
+<link rel="stylesheet" id="hfe-social-share-icons-brands-css" href="./wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css?ver=5.15.3" media="all">
+<link rel="stylesheet" id="hfe-social-share-icons-fontawesome-css" href="./wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css?ver=5.15.3" media="all">
+<link rel="stylesheet" id="hfe-nav-menu-icons-css" href="./wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css?ver=5.15.3" media="all">
+<link rel="stylesheet" id="ekit-widget-styles-css" href="./wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=3.4.7" media="all">
+<link rel="stylesheet" id="ekit-responsive-css" href="./wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=3.4.7" media="all">
+<link rel="stylesheet" id="elementor-gf-local-comicneue-css" href="./wp-content/uploads/elementor/google-fonts/css/comicneue.css?ver=1742487900" media="all">
+<script src="./wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="./wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script id="jquery-js-after">!function($){"use strict";$(document).ready(function(){$(this).scrollTop()>100&&$(".hfe-scroll-to-top-wrap").removeClass("hfe-scroll-to-top-hide"),$(window).scroll(function(){$(this).scrollTop()<100?$(".hfe-scroll-to-top-wrap").fadeOut(300):$(".hfe-scroll-to-top-wrap").fadeIn(300)}),$(".hfe-scroll-to-top-wrap").on("click",function(){$("html, body").animate({scrollTop:0},300);return!1})})}(jQuery);</script>
+<script id="ce-global-js-extra">var ce_global = {"lib_js":".\/\/wp-content\/plugins\/cowidgets-elementor-addons\/assets\/js\/lib\/"};</script>
+<script src="./wp-content/plugins/cowidgets-elementor-addons/assets/js/ce-global.js?ver=1.0.10" id="ce-global-js"></script>
+<link rel="https://api.w.org/" href="./wp-json/index.html">
+<link rel="alternate" title="JSON" type="application/json" href="./wp-json/wp/v2/pages/3848/index.html">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.7.2">
+<link rel="canonical" href="./index.html">
+<link rel="shortlink" href="./index.html">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="./wp-json/oembed/1.0/embed/index.html?url=http%3A%2F%2F%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="./wp-json/oembed/1.0/embed/index.html?url=http%3A%2F%2F%2F#038;format=xml">
+<meta name="generator" content="Elementor 3.28.0; features: e_font_icon_svg, additional_custom_breakpoints, e_local_google_fonts, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}</style>
+			<link rel="icon" href="./wp-content/uploads/2025/03/cropped-android-chrome-512x512-1-1-32x32.png" sizes="32x32">
+<link rel="icon" href="./wp-content/uploads/2025/03/cropped-android-chrome-512x512-1-1-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="./wp-content/uploads/2025/03/cropped-android-chrome-512x512-1-1-180x180.png">
+<meta name="msapplication-TileImage" content="./wp-content/uploads/2025/03/cropped-android-chrome-512x512-1-1-270x270.png">
+<style id="kirki-inline-styles"></style>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 </head>
+<body class="home page-template page-template-elementor_canvas page page-id-3848 wp-custom-logo wp-embed-responsive ce-header ce-header--transparent ce-template-hello-elementor ce-stylesheet-hello-elementor ehf-template-hello-elementor ehf-stylesheet-hello-elementor theme-default elementor-default elementor-template-canvas elementor-kit-3742 elementor-page elementor-page-3848">
+			<div data-elementor-type="wp-page" data-elementor-id="3848" class="elementor elementor-3848">
+				<div class="elementor-element elementor-element-76a78644 e-con-full e-flex e-con e-parent" data-id="76a78644" data-element_type="container">
+		<div class="elementor-element elementor-element-2dd87167 e-con-full e-flex e-con e-child" data-id="2dd87167" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-7def0d67 e-flex e-con-boxed e-con e-child" data-id="7def0d67" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-5e326666 e-con-full e-flex e-con e-child" data-id="5e326666" data-element_type="container">
+				<div class="elementor-element elementor-element-52d4a45 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-heading" data-id="52d4a45" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h1 class="elementor-heading-title elementor-size-default">Hi! I'm Luisfer</h1>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-4612df74 e-con-full e-flex e-con e-child" data-id="4612df74" data-element_type="container">
+				<div class="elementor-element elementor-element-58de9702 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-heading" data-id="58de9702" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h1 class="elementor-heading-title elementor-size-default">A Multidisciplinary</h1>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5299cc3e elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-heading" data-id="5299cc3e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h1 class="elementor-heading-title elementor-size-default">Designer and artist</h1>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-77076d27 e-con-full e-flex e-con e-child" data-id="77076d27" data-element_type="container">
+				<div class="elementor-element elementor-element-12bf00ba elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-heading" data-id="12bf00ba" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h1 class="elementor-heading-title elementor-size-default">based on Madrid, Spain.</h1>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6e64a25d e-flex e-con-boxed e-con e-parent" data-id="6e64a25d" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-13041119 elementor-invisible elementor-widget elementor-widget-heading" data-id="13041119" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">I enjoy creating dynamic and powerful designs from start to finish.</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-6717c016 e-con-full e-flex e-con e-child" data-id="6717c016" data-element_type="container">
+		<div class="elementor-element elementor-element-6efc3ca4 e-con-full e-flex elementor-invisible e-con e-child" data-id="6efc3ca4" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
+				<div class="elementor-element elementor-element-36b05720 elementor-widget elementor-widget-image" data-id="36b05720" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="800" height="774" src="./wp-content/uploads/2025/03/me-1024x991.jpeg" class="attachment-large size-large wp-image-3893" alt="" srcset="./wp-content/uploads/2025/03/me-1024x991.jpeg 1024w, ./wp-content/uploads/2025/03/me-300x290.jpeg 300w, ./wp-content/uploads/2025/03/me-768x744.jpeg 768w, ./wp-content/uploads/2025/03/me.jpeg 1036w" sizes="(max-width: 800px) 100vw, 800px">															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-43c4ad22 e-con-full e-flex elementor-invisible e-con e-child" data-id="43c4ad22" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:200}">
+				<div class="elementor-element elementor-element-1f553ace elementor-widget elementor-widget-button" data-id="1f553ace" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">About Me</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-136f2737 elementor-widget elementor-widget-text-editor" data-id="136f2737" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Providing creative service and consultancy to international clients in diverse fields while keeping close attention to detail and aiming for timeless yet contemporary results.</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6c2d68af e-con-full e-flex elementor-invisible e-con e-child" data-id="6c2d68af" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:300}">
+				<div class="elementor-element elementor-element-ccb6966 elementor-widget elementor-widget-button" data-id="ccb6966" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Myself</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-51f26075 elementor-widget elementor-widget-text-editor" data-id="51f26075" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Focused on developing powerful experiences through branding and bold typography. In the meantime I explore the potential of data visualization, typeface and illustration.</p>								</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7c26d146 e-flex e-con-boxed e-con e-parent" data-id="7c26d146" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-711527f8 elementor-invisible elementor-widget elementor-widget-heading" data-id="711527f8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Services</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-48d21bcd e-grid e-con-full e-con e-child" data-id="48d21bcd" data-element_type="container">
+		<div class="elementor-element elementor-element-71e2a6e0 e-con-full e-flex elementor-invisible e-con e-child" data-id="71e2a6e0" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
+		<div class="elementor-element elementor-element-1baf0a3b e-flex e-con-boxed e-con e-child" data-id="1baf0a3b" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-65c43587 elementor-widget elementor-widget-heading" data-id="65c43587" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Graphic Design</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-3b095c6e elementor-widget elementor-widget-text-editor" data-id="3b095c6e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p class="p1"><span class="s1">Graphic design is the foundation of my education. As a multidisciplinary designer, I excel in editorial design, typography, event branding, social media, and creative direction.</span></p>								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-5be49a89 e-con-full e-flex e-con e-child" data-id="5be49a89" data-element_type="container">
+				<div class="elementor-element elementor-element-43c2c3bf elementor-widget elementor-widget-image" data-id="43c2c3bf" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="468" height="306" src="./wp-content/uploads/2025/03/Captura-de-Pantalla-2023-12-08-a-las-17.57-1.png" class="attachment-large size-large wp-image-3974" alt="" srcset="./wp-content/uploads/2025/03/Captura-de-Pantalla-2023-12-08-a-las-17.57-1.png 468w, ./wp-content/uploads/2025/03/Captura-de-Pantalla-2023-12-08-a-las-17.57-1-300x196.png 300w" sizes="(max-width: 468px) 100vw, 468px">															</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1871a169 e-con-full e-flex elementor-invisible e-con e-child" data-id="1871a169" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
+		<div class="elementor-element elementor-element-1fff2733 e-flex e-con-boxed e-con e-child" data-id="1fff2733" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-149ebfdc elementor-widget elementor-widget-heading" data-id="149ebfdc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Illustration</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-3ea177d3 elementor-widget elementor-widget-text-editor" data-id="3ea177d3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p class="p1"><span class="s1">Since childhood, painting and illustration have been my passions. Over the years, I’ve refined my skills and explored various techniques, keeping my creativity at the heart of everything I do.</span></p>								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4f5947bb e-con-full e-flex e-con e-child" data-id="4f5947bb" data-element_type="container">
+				<div class="elementor-element elementor-element-6aa4d51e elementor-widget elementor-widget-image" data-id="6aa4d51e" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="800" height="943" src="./wp-content/uploads/2025/03/Captura-de-Pantalla-2025-03-20-a-las-17.17.10-869x1024.png" class="attachment-large size-large wp-image-3976" alt="" srcset="./wp-content/uploads/2025/03/Captura-de-Pantalla-2025-03-20-a-las-17.17.10-869x1024.png 869w, ./wp-content/uploads/2025/03/Captura-de-Pantalla-2025-03-20-a-las-17.17.10-255x300.png 255w, ./wp-content/uploads/2025/03/Captura-de-Pantalla-2025-03-20-a-las-17.17.10-768x905.png 768w, ./wp-content/uploads/2025/03/Captura-de-Pantalla-2025-03-20-a-las-17.17.10-1304x1536.png 1304w, ./wp-content/uploads/2025/03/Captura-de-Pantalla-2025-03-20-a-las-17.17.10.png 1469w" sizes="(max-width: 800px) 100vw, 800px">															</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-bd1566f e-con-full e-flex elementor-invisible e-con e-child" data-id="bd1566f" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:600}">
+		<div class="elementor-element elementor-element-372dac34 e-flex e-con-boxed e-con e-child" data-id="372dac34" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-6bbe0814 elementor-widget elementor-widget-heading" data-id="6bbe0814" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">UI/UX Design</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1bf4d38f elementor-widget elementor-widget-text-editor" data-id="1bf4d38f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p class="p1"><span class="s1">I specialized in 2022 in UX/UI, in user research, wireframing, prototyping, and crafting seamless digital experiences. It&#8217;s been around my work since then.</span></p>								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-591956de e-con-full e-flex e-con e-child" data-id="591956de" data-element_type="container">
+				<div class="elementor-element elementor-element-36d2c328 elementor-widget elementor-widget-image" data-id="36d2c328" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="800" height="698" src="./wp-content/uploads/2025/03/Captura-de-Pantalla-2025-03-20-a-las-17.01.33-1024x894.png" class="attachment-large size-large wp-image-3977" alt="" srcset="./wp-content/uploads/2025/03/Captura-de-Pantalla-2025-03-20-a-las-17.01.33-1024x894.png 1024w, ./wp-content/uploads/2025/03/Captura-de-Pantalla-2025-03-20-a-las-17.01.33-300x262.png 300w, ./wp-content/uploads/2025/03/Captura-de-Pantalla-2025-03-20-a-las-17.01.33-768x670.png 768w, ./wp-content/uploads/2025/03/Captura-de-Pantalla-2025-03-20-a-las-17.01.33.png 1054w" sizes="(max-width: 800px) 100vw, 800px">															</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-65ba152d e-con-full e-flex elementor-invisible e-con e-child" data-id="65ba152d" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:700}">
+		<div class="elementor-element elementor-element-2e5bf5ec e-flex e-con-boxed e-con e-child" data-id="2e5bf5ec" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-29bcbf74 elementor-widget elementor-widget-heading" data-id="29bcbf74" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Branding</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f96dc9b elementor-widget elementor-widget-text-editor" data-id="f96dc9b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p class="p1"><span class="s1">I have worked with both major clients and small businesses, helping them develop strong and memorable identities.</span></p>								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-425b90e0 e-con-full e-flex e-con e-child" data-id="425b90e0" data-element_type="container">
+				<div class="elementor-element elementor-element-3482e108 elementor-widget elementor-widget-image" data-id="3482e108" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="481" height="421" src="./wp-content/uploads/2025/03/ring-ig-1.png" class="attachment-large size-large wp-image-3978" alt="" srcset="./wp-content/uploads/2025/03/ring-ig-1.png 481w, ./wp-content/uploads/2025/03/ring-ig-1-300x263.png 300w" sizes="(max-width: 481px) 100vw, 481px">															</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-3139861d e-flex e-con-boxed e-con e-parent" data-id="3139861d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-18b07557 elementor-invisible elementor-widget elementor-widget-heading" data-id="18b07557" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">My Experience, <br>Transforming ideas into reality.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2607c013 elementor-widget__width-inherit elementor-invisible elementor-widget elementor-widget-text-editor" data-id="2607c013" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Started my career in early 2019 as a freelance and continues to this day.</p>								</div>
+				</div>
+		<div class="elementor-element elementor-element-55f42c93 e-con-full e-flex elementor-invisible e-con e-child" data-id="55f42c93" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
+		<div class="elementor-element elementor-element-42f2bfa0 e-con-full e-flex e-con e-child" data-id="42f2bfa0" data-element_type="container">
+				<div class="elementor-element elementor-element-24fdee18 elementor-widget elementor-widget-heading" data-id="24fdee18" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">UX/UI and Graphic Designer</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-36582260 elementor-widget elementor-widget-text-editor" data-id="36582260" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>/    MARCO Agency</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-612e2fab e-con-full e-flex e-con e-child" data-id="612e2fab" data-element_type="container">
+				<div class="elementor-element elementor-element-4857c269 elementor-widget elementor-widget-text-editor" data-id="4857c269" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Sept 2021 &#8211; Today</p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-3949a5bd e-con-full e-flex elementor-invisible e-con e-child" data-id="3949a5bd" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
+		<div class="elementor-element elementor-element-1d3843e5 e-con-full e-flex e-con e-child" data-id="1d3843e5" data-element_type="container">
+				<div class="elementor-element elementor-element-6ed3b7e8 elementor-widget elementor-widget-heading" data-id="6ed3b7e8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Graphic Designer</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-15e11e3e elementor-widget elementor-widget-text-editor" data-id="15e11e3e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>/    Freelance</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9306765 e-con-full e-flex e-con e-child" data-id="9306765" data-element_type="container">
+				<div class="elementor-element elementor-element-ac965db elementor-widget elementor-widget-text-editor" data-id="ac965db" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>2019 &#8211; Today</p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6316a2d7 e-con-full e-flex elementor-invisible e-con e-child" data-id="6316a2d7" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
+		<div class="elementor-element elementor-element-620beefb e-con-full e-flex e-con e-child" data-id="620beefb" data-element_type="container">
+				<div class="elementor-element elementor-element-2f75c200 elementor-widget elementor-widget-heading" data-id="2f75c200" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">UI/UX Designer</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-75eb9b5d elementor-widget elementor-widget-text-editor" data-id="75eb9b5d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>/    Interacso</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-44e7b190 e-con-full e-flex e-con e-child" data-id="44e7b190" data-element_type="container">
+				<div class="elementor-element elementor-element-74f60514 elementor-widget elementor-widget-text-editor" data-id="74f60514" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Jan 2022 &#8211; Jun 2022</p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-300a095a e-con-full e-flex elementor-invisible e-con e-child" data-id="300a095a" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
+		<div class="elementor-element elementor-element-29115955 e-con-full e-flex e-con e-child" data-id="29115955" data-element_type="container">
+				<div class="elementor-element elementor-element-61129ded elementor-widget elementor-widget-heading" data-id="61129ded" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Graphic Designer</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-40b16ffd elementor-widget elementor-widget-text-editor" data-id="40b16ffd" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>/    SPAINMEDIA Forbes Spain</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1047b810 e-con-full e-flex e-con e-child" data-id="1047b810" data-element_type="container">
+				<div class="elementor-element elementor-element-692cd19a elementor-widget elementor-widget-text-editor" data-id="692cd19a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Feb 2020 &#8211; Feb 2021</p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7efbd995 e-con-full e-flex e-con e-child" data-id="7efbd995" data-element_type="container">
+				<div class="elementor-element elementor-element-1cb9d35b elementor-invisible elementor-widget elementor-widget-button" data-id="1cb9d35b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="#">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Photoshop</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-2a4f6640 elementor-invisible elementor-widget elementor-widget-button" data-id="2a4f6640" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="#">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Illustrator</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-27db6109 elementor-invisible elementor-widget elementor-widget-button" data-id="27db6109" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="#">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">FIGMA</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-6753925e elementor-invisible elementor-widget elementor-widget-button" data-id="6753925e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="#">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">HTML</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-507adf7a elementor-invisible elementor-widget elementor-widget-button" data-id="507adf7a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="#">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">WordPress</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-3549ed7d elementor-invisible elementor-widget elementor-widget-button" data-id="3549ed7d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="#">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">ELEMENTOR</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-200651a4 elementor-invisible elementor-widget elementor-widget-button" data-id="200651a4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="#">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">CSS</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-d499923 elementor-invisible elementor-widget elementor-widget-button" data-id="d499923" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="#">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Figma</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4e83657d e-flex e-con-boxed e-con e-parent" data-id="4e83657d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-2c321f66 elementor-invisible elementor-widget elementor-widget-heading" data-id="2c321f66" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Education</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2c0dfd74 elementor-align-center elementor-widget__width-inherit elementor-widget elementor-widget-button" data-id="2c0dfd74" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="#">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">ALWAYS LEARNING</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+		<div class="elementor-element elementor-element-22e3bac1 e-con-full e-flex e-con e-child" data-id="22e3bac1" data-element_type="container">
+		<div class="elementor-element elementor-element-6771c236 e-con-full e-flex elementor-invisible e-con e-child" data-id="6771c236" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
+		<div class="elementor-element elementor-element-a2848d0 e-con-full e-flex e-con e-child" data-id="a2848d0" data-element_type="container">
+				<div class="elementor-element elementor-element-71635ee8 elementor-widget elementor-widget-text-editor" data-id="71635ee8" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>MA</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-174e8cc6 e-con-full e-flex e-con e-child" data-id="174e8cc6" data-element_type="container">
+				<div class="elementor-element elementor-element-2d2f20a elementor-widget elementor-widget-heading" data-id="2d2f20a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">UX/UI Design</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5b31f6b9 elementor-widget elementor-widget-text-editor" data-id="5b31f6b9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Universidad Internacional de la Rioja</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6d88d679 e-con-full e-flex e-con e-child" data-id="6d88d679" data-element_type="container">
+				<div class="elementor-element elementor-element-37b64c74 elementor-widget elementor-widget-text-editor" data-id="37b64c74" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>2021-2022</p>								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-15452384 e-con-full e-flex elementor-invisible e-con e-child" data-id="15452384" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
+		<div class="elementor-element elementor-element-3402a68e e-con-full e-flex e-con e-child" data-id="3402a68e" data-element_type="container">
+				<div class="elementor-element elementor-element-37a8b465 elementor-widget elementor-widget-text-editor" data-id="37a8b465" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>BA</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-44665b07 e-con-full e-flex e-con e-child" data-id="44665b07" data-element_type="container">
+				<div class="elementor-element elementor-element-42fee60a elementor-widget elementor-widget-heading" data-id="42fee60a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Graphic Design</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2051356e elementor-widget elementor-widget-text-editor" data-id="2051356e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Escuela Superior de la Rioja</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1de6586d e-con-full e-flex e-con e-child" data-id="1de6586d" data-element_type="container">
+				<div class="elementor-element elementor-element-2ec0e9ac elementor-widget elementor-widget-text-editor" data-id="2ec0e9ac" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>2016-2020</p>								</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-20228965 e-con-full e-flex elementor-invisible e-con e-child" data-id="20228965" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
+				<div class="elementor-element elementor-element-3af73d5f elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="3af73d5f" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-25343538 e-flex e-con-boxed e-con e-parent" data-id="25343538" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-1d09058e elementor-invisible elementor-widget elementor-widget-heading" data-id="1d09058e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">My Projects</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1a432bfb elementor-align-center elementor-widget__width-inherit elementor-invisible elementor-widget elementor-widget-button" data-id="1a432bfb" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="#">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Download my portfolio</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+		<div class="elementor-element elementor-element-69f151ab e-con-full e-flex elementor-invisible e-con e-child" data-id="69f151ab" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
+		<div class="elementor-element elementor-element-4ff11e29 e-con-full e-flex e-con e-child" data-id="4ff11e29" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				</div>
+		<div class="elementor-element elementor-element-207b8776 e-con-full e-flex e-con e-child" data-id="207b8776" data-element_type="container">
+				<div class="elementor-element elementor-element-b80c2b5 elementor-widget elementor-widget-heading" data-id="b80c2b5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Queer Safe</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-573082f2 elementor-widget elementor-widget-text-editor" data-id="573082f2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Queer Safe is an app design to help Queer young people meet safe spaces in their city. Everyone is welcome, this app flags issues and creates community.</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7dd6ba70 e-con-full e-flex e-con e-child" data-id="7dd6ba70" data-element_type="container">
+				<div class="elementor-element elementor-element-dd3db50 elementor-align-right elementor-mobile-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="dd3db50" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-text">Branding</span>
+									</li>
+								<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-text">Product</span>
+									</li>
+								<li class="elementor-icon-list-item">
+										<span class="elementor-icon-list-text">Design</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-45b6d6d elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="45b6d6d" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-1c2cb5d4 e-con-full e-flex e-con e-child" data-id="1c2cb5d4" data-element_type="container">
+				<div class="elementor-element elementor-element-7af753ca elementor-mobile-align-center elementor-invisible elementor-widget elementor-widget-button" data-id="7af753ca" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="#">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">View Full Project soon</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-28368e76 e-con-full e-flex e-con e-child" data-id="28368e76" data-element_type="container">
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-684a7198 e-flex e-con-boxed e-con e-parent" data-id="684a7198" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-5e8af9e0 e-con-full e-flex e-con e-child" data-id="5e8af9e0" data-element_type="container">
+				<div class="elementor-element elementor-element-777844f1 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-heading" data-id="777844f1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h1 class="elementor-heading-title elementor-size-default">Let's work together</h1>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-de307 e-con-full e-flex e-con e-parent" data-id="de307" data-element_type="container">
+		<div class="elementor-element elementor-element-a368b77 e-con-full e-flex elementor-invisible e-con e-child" data-id="a368b77" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:200}">
+		<div class="elementor-element elementor-element-424fed6f e-con-full e-flex e-con e-child" data-id="424fed6f" data-element_type="container">
+		<div class="elementor-element elementor-element-289e7822 e-con-full e-flex e-con e-child" data-id="289e7822" data-element_type="container">
+				<div class="elementor-element elementor-element-30593840 elementor-widget elementor-widget-heading" data-id="30593840" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Contact</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1bb9cca7 elementor-widget__width-auto elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="1bb9cca7" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="mailto:luisfer.depaz.ldp@gmail.com">
 
-<body class="position-relative d-flex h-100 w-100" data-bs-spy="scroll" data-bs-target="#navScroll" data-bs-theme="light">
-  <div id="invertedcursor"></div>
-  <div class="h-100 container-fluid position-relative">
-      <div class="h-100 row d-flex align-items-stretch position-relative z-1">
-        
-          <div class="p-0 col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-5 d-flex align-items-start flex-column shadow position-relative">
-          
-            <header class="mb-auto py-vh-2 col-12 px-vw-5">
-              <nav id="navScroll" class="navbar navbar-expand-lg navbar-light d-flex px-3" tabindex="0">
-    <a class="navbar-brand d-flex align-items-center flex-grow-1 link-opacity-50-hover link-dark" href="index-dark.html">
-  <div class="fw-bold fs-4">luisfer palo</div>
-</a>
+											<span class="elementor-icon-list-text">luisfer.depaz.ldp@gmail.com</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
 
-    <div class="col-auto ps-2 ms-2" id="navbarSupportedContent">
-      <ul class="nav ms-auto mb-2 mb-lg-0 ms-2 list-inline list-unstyled">
-      <li class="nav-item">
-    <a class="nav-link pe-3 link-dark link-opacity-50-hover" aria-label="Link to my Dribbble Instagram" href="https://instagram.com/luisferpalo" target="_blank">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/> 
-</svg></a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link link-dark link-opacity-50-hover" href="https://github.com/luisferpalo" aria-label="Link to my GitHub Profil Page" target="_blank">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-</svg>
-    </a>
-  </li>
+											<span class="elementor-icon-list-text">+34 603524870</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="http://instagram.com/luisferpalo/">
 
-    </ul>
-    </div>
-</nav>
+											<span class="elementor-icon-list-text">@luisferpalo</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.linkedin.com/in/luisferpalo/">
 
-            </header>
-            <main class="mb-auto col-12 px-vw-5">
-              <div class="bg-light rounded p-5 overflow-x-hidden" data-aos="fade-left">
-
-  <h1 class="fw-lighter text-dark">
-    <strong>Hi! I'm Luisfer, multidisciplinary graphic and UX/UI designer.
-
-
-    </strong>I enjoy creating dynamic and powerful designs from start to finish. Based in Madrid, Spain.
-    </h1>
- 
-<p>
-  <a href="aboutme-dark.html" class="ms-0 mt-3 mt-sm-0 col-12 col-sm-auto p-0 link-dark" aria-label="Link to my About page" data-aos="fade-left" data-aos-delay="300">More about me</a>
-</p>
-</div>
-<div class="py-vh-3 overflow-x-hidden">
-  <h2 class="h6 mb-4 px-4" data-aos="fade-left" data-aos-delay="200">Projects:</h2>
-  <div class="d-flex align-items-center p-4" data-aos="fade-left" data-aos-delay="200">
-    <div class="me-4">
-      <img loading="lazy" src="img/webp/bck1_xs.webp" width="80" height="80" class="rounded-circle shadow-sm" alt="An image of my sitesproject website">
-    </div>
-    <div class="flex-grow-1">
-      <h3 class="h5"><a href="#" class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-underline-dark">Queer Safe</a></h3>
-      <p>Creative design of an Interactive app made for the queer community with an special interest on getting to know the city through events, safe spaces and strength the community.</p>
-    </div>
-  </div>
-  <div class="d-flex align-items-center my-2 p-4" data-aos="fade-left" data-aos-delay="200">
-    <div class="me-4">
-      <img loading="lazy" src="img/webp/sample4_xs.webp" width="80" height="80" class="rounded-circle shadow-sm" alt="Another image of another sitesproject website">
-    </div>
-    <div class="flex-grow-1">
-      <h3 class="h5"><a href="#" class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-underline-dark">Blue Ocean</a></h3>
-      <p>Design and digitalization of an old production company, turning its brand new interface into a bold new spirit.</p>
-    </div>
-  </div>
-  <div class="d-flex align-items-center p-4" data-aos="fade-left" data-aos-delay="400">
-    <div class="me-4">
-      <img loading="lazy" src="img/webp/sample6_xs.webp" width="80" height="80" class="rounded-circle shadow-sm" alt="Another image of another sitesproject website">
-    </div>
-    <div class="flex-grow-1">
-      <h3 class="h5"><a href="#" class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover link-underline-dark">MARCO Agency</a></h3>
-      <p>Complete design of a communication agency. Focused on the message and interaction.</p>
-    </div>
-  </div>
-</div>
-
-
-
-            </main>
-                        <footer class="mb-auto col-12 py-vh-3 px-vw-5">
-
-
-
-<footer class="mt-auto py-4 text-right fixed-bottom">
-    <div class="inner container">
-         <div class="row text-right">
-            <div class="col-md-6"></div>
-         	<div class="col-md-6">
-
-         	</div>
-            
-  <div class="row d-flex justify-content-between small">
-    <div class="col-12 col-md-auto d-flex justify-content-center">
-  <ul class="nav bg-white rounded px-3">
-    <li class="nav-item">
-      <a class="nav-link link-dark px-0" href="index.html" aria-label="Go home!">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewbox="0 0 16 16">
-          <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
-          <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
-        </svg>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-dark" href="aboutme-dark.html">About me</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-dark" href ="/img/portfolio-luisfernando-2024_c.pdf" attributes-list download ="Portfolio Luisferpalo 2024">Download Portfolio</a>
-    </li>
-  </ul>
-</div>
-  <div class="col-12 col-md text-center text-md-end py-2">
-    © 2025. All Rights Reserved.
-    </div>
-</div>
-
-          </footer>
-          </div>
-          
-            <div class="col-1 col-sm-2 col-md-3 col-lg-4 col-xl-5 col-xxl-7 bg-cover py-vh-max py-lg-0 bg-black ba-local position-fixed top-0 end-0 z-0 h-100 bg-img" data-aos="fade"></div>
-          
-        </div>
-      </div>
-    
-      <script src="js/bootstrap.bundle.min.js" async></script>
-<script src="js/aos.js"></script>
- <script>
-AOS.init({
-    duration: 1000, // Añade una animación más suave
-    delay: 100, // Retraso en la animación
-    once: true, // La animación solo se activará una vez
-});
-document.body.onmousemove = function(e) {
-  document.documentElement.style.setProperty (
-    '--x', (
-      e.clientX+window.scrollX
-    )
-    + 'px'
-  );
-  document.documentElement.style.setProperty (
-    '--y', (
-      e.clientY+window.scrollY
-    ) 
-    + 'px'
-  );
-}
- </script>
-
-</body>
-
+											<span class="elementor-icon-list-text">LinkedIn</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-50613d5e e-con-full e-flex e-con e-child" data-id="50613d5e" data-element_type="container">
+				<div class="elementor-element elementor-element-2cfc0684 elementor-widget elementor-widget-text-editor" data-id="2cfc0684" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>all rights reserved © 2025. designed by me. </p>								</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					<script>const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );</script>
+			<link rel="stylesheet" id="ce-widgets-style-css" href="./wp-content/plugins/cowidgets-elementor-addons/inc/widgets-css/frontend.css?ver=1.0.10" media="all">
+<link rel="stylesheet" id="font-awesome-5-all-css" href="./wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.28.0" media="all">
+<link rel="stylesheet" id="font-awesome-4-shim-css" href="./wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.28.0" media="all">
+<link rel="stylesheet" id="owl.carousel-css" href="./wp-content/plugins/gum-elementor-addon//css/owl.carousel.css?ver=6.7.2" media="all">
+<link rel="stylesheet" id="elementor-icons-ekiticons-css" href="./wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css?ver=3.4.7" media="all">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js?ver=4.0.1" id="waypoints-js"></script>
+<script src="./wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5" id="swiper-js"></script>
+<script src="./wp-content/plugins/metform/public/assets/lib/cute-alert/cute-alert.js?ver=3.9.6" id="cute-alert-js"></script>
+<script src="./wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=3.3.0" id="hello-theme-frontend-js"></script>
+<script src="./wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=3.4.7" id="elementskit-framework-js-frontend-js"></script>
+<script id="elementskit-framework-js-frontend-js-after">var elementskit = {
+			resturl: './/wp-json/elementskit/v1/',
+		}</script>
+<script src="./wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=3.4.7" id="ekit-widget-scripts-js"></script>
+<script src="./wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.28.0" id="font-awesome-4-shim-js"></script>
+<script src="./wp-content/plugins/gum-elementor-addon/js/jquery.easing.1.3.js?ver=1.0" id="easing-js"></script>
+<script src="./wp-content/plugins/gum-elementor-addon/js/jquery.superslides.js?ver=1.0" id="superslides-js"></script>
+<script src="./wp-content/plugins/gum-elementor-addon/js/allscripts.js?ver=1.0" id="gum-elementor-addon-js"></script>
+<script src="./wp-content/plugins/gum-elementor-addon//js/owl.carousel.min.js?ver=2.2.1" id="owl.carousel-js"></script>
+<script src="./wp-content/plugins/gum-elementor-addon/js/price-table.js?ver=1.0" id="gum-price-table-js"></script>
+<script src="./wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.28.0" id="elementor-webpack-runtime-js"></script>
+<script src="./wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.28.0" id="elementor-frontend-modules-js"></script>
+<script src="./wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.28.0","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_local_google_fonts":true,"hello-theme-header-footer":true,"nested-elements":true,"editor_v2":true,"e_element_cache":true,"home_screen":true,"launchpad-checklist":true},"urls":{"assets":".\/\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":".\/\/wp-admin\/admin-ajax.php","uploadUrl":".\/\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"e5eeef30bb"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":3848,"title":"luisferpalo%20%E2%80%93%20Multidisciplinary%20designer%20based%20in%20Madrid%2C%20Spain","excerpt":"","featuredImage":false}};</script>
+<script src="./wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.28.0" id="elementor-frontend-js"></script>
+<script src="./wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.min.js?ver=3.4.7" id="animate-circle-js"></script>
+<script id="elementskit-elementor-js-extra">var ekit_config = {"ajaxurl":".\/\/wp-admin\/admin-ajax.php","nonce":"8b5d65af31"};</script>
+<script src="./wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=3.4.7" id="elementskit-elementor-js"></script>
+	</body>
 </html>
