@@ -1,0 +1,340 @@
+/*
+  GALLERY SITE STYLES
+  -------------------
+  Main things you may want to edit:
+  - Colors in :root
+  - Max page width in --max
+  - Spacing in --pad
+  - Number of gallery columns in .image-posts
+*/
+
+
+:root {
+  /* EDIT HERE: global colors */
+  --bg: #f2f2f2;
+  --text: #111;
+  --muted: #666;
+  --line: rgba(17, 17, 17, 0.14);
+
+  /* EDIT HERE: layout sizing */
+  --max: 1600px;
+  --pad: 24px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Cossette Texte", sans-serif;;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  font-size: 15px;
+  color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.page {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 18px var(--pad) 48px;
+}
+
+.topbar {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 24px;
+}
+
+.brand {
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.topnav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+
+.rule {
+  border-top: 1px solid var(--line);
+  margin: 0 0 20px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 36px;
+  align-items: start;
+}
+
+.sidebar {
+  position: sticky;
+  top: 20px;
+  align-self: start;
+  font-size: 14px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.sidebar .small {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.content { min-width: 0; }
+
+.section {
+  padding: 0 0 28px;
+  margin: 0 0 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.section:last-child { border-bottom: none; }
+
+.kicker {
+  font-size: 12px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+}
+
+h1, h2, h3, p {
+  margin: 0 0 12px;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Cossette Titre", sans-serif;
+font-size: clamp(2.5rem, -17.8125rem + 65vw, 18.75rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  max-width: 10ch;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.lede {
+  max-width: 62ch;
+  color: #222;
+  font-size: 16px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 28px;
+}
+
+.visit p,
+.about p,
+.exhibition-copy p,
+.newsletter p {
+  max-width: 68ch;
+}
+
+.muted { color: var(--muted); }
+
+/*
+  EDIT HERE: gallery layout
+  Change columns: 3 to 2 or 4 if needed
+*/
+.image-posts {
+  columns: 3;
+  column-gap: 18px;
+}
+
+.image-post {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 18px;
+  break-inside: avoid;
+  position: relative;
+}
+
+.image-post img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+
+  filter: opacity(100%);
+  
+}
+
+.image-post:hover img {
+  mix-blend-mode: normal;
+  filter: none;
+}
+/* EDIT HERE: image proportions for gallery cards */
+.image-post.tall img { aspect-ratio: 4 / 5; }
+.image-post.wide img { aspect-ratio: 4 / 3; }
+.image-post.square img { aspect-ratio: 1 / 1; }
+
+.image-post .meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding-top: 7px;
+}
+
+.image-post:hover img {
+  transform: translateY(0px);
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.hero-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  margin: 12px 0 18px;
+  border: 1px solid var(--line);
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+  height: 600px;
+  background-image: url('assets/img/feature-1.svg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid var(--text);
+  padding: 10px 14px;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 40px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Lightbox */
+.gallery-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 999;
+}
+
+.gallery-lightbox.is-open {
+  display: flex;
+}
+
+.gallery-lightbox img {
+  max-width: min(1100px, 92vw);
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  border: 1px solid rgba(255,255,255,0.14);
+}
+
+.gallery-lightbox button {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* 404 page */
+.error-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.error-wrap {
+  width: min(100%, 780px);
+  padding: 32px 24px;
+}
+
+/* Tablet */
+@media (max-width: 980px) {
+  .layout,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .topbar {
+    grid-template-columns: 1fr;
+  }
+
+  .topnav {
+    justify-content: flex-start;
+  }
+
+  .image-posts {
+    columns: 2;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  body { font-size: 14px; }
+  .page { padding-left: 16px; padding-right: 16px; }
+  .image-posts { columns: 1; }
+  h1 { max-width: 12ch; }
+  .footer { flex-direction: column; }
+}
