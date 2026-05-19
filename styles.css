@@ -37,7 +37,7 @@ html, body {
 
 body {
   font-family: var(--font-sans);
-  font-weight: 300;
+  font-weight: 400;
   background: #1a1a1a;
   color: var(--white);
   -webkit-font-smoothing: antialiased;
@@ -147,13 +147,13 @@ body {
   cursor: default;
 }
 
-.tag--name   { font-weight: 500; letter-spacing: 0.01em; }
-.tag--alias  { font-weight: 300; color: var(--white-60); font-size: clamp(10px, 0.95vw, 12px); }
-.tag--full   { font-weight: 500; }
+.tag--name   { font-weight: 400; letter-spacing: 0.01em; }
+.tag--alias  { font-weight: 400; color: var(--white); font-size: clamp(10px, 0.95vw, 12px); }
+.tag--full   { font-weight: 400; }
 
 .tag--contact {
   cursor: pointer;
-  color: var(--white-60);
+  color: var(--white);
   font-size: clamp(10px, 0.95vw, 12px);
 }
 

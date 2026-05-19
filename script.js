@@ -13,31 +13,18 @@
 //     Make sure the files are in the same repo before deploying to GitHub Pages.
 // ──────────────────────────────────────────────
 const SLIDES = [
-  {
-    // Placeholder 1 — abstract warm tones
-    src: 'https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=900&q=80',
-    caption: 'Pie de foto'
-  },
-  {
-    // Placeholder 2 — blue/green painterly
-    src: 'https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=900&q=80',
-    caption: 'Pie de foto'
-  },
-  {
-    // Placeholder 3 — textured warm abstract
-    src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80',
-    caption: 'Pie de foto'
-  },
-  {
-    // Placeholder 4 — cool geometric
-    src: 'https://images.unsplash.com/photo-1567359781514-81173b801d98?w=900&q=80',
-    caption: 'Pie de foto'
-  },
-  {
-    // Placeholder 5 — organic color field
-    src: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?w=900&q=80',
-    caption: 'Pie de foto'
-  },
+  { src: 'assets/img/00.jpg', caption: '' },
+  { src: 'assets/img/01.png', caption: '' },
+  { src: 'assets/img/02.jpg', caption: '' },
+  { src: 'assets/img/03.JPG', caption: '' },
+  { src: 'assets/img/04.png', caption: '' },
+  { src: 'assets/img/05.png', caption: '' },
+  { src: 'assets/img/06.png', caption: '' },
+  { src: 'assets/img/07.png', caption: '' },
+  { src: 'assets/img/08.jpg', caption: '' },
+  { src: 'assets/img/09.png', caption: '' },
+  { src: 'assets/img/11.png', caption: '' },
+  { src: 'assets/img/12.png', caption: '' },
 ];
 
 // ──────────────────────────────────────────────
@@ -78,66 +65,48 @@ function preload(src) {
 // ──────────────────────────────────────────────
 function initSlide() {
   const slide = SLIDES[current];
-  bgA.style.backgroundImage  = `url('${slide.src}')`;
-  imgA.src                   = slide.src;
-  bgA.style.opacity          = '1';
-  bgB.style.opacity          = '0';
-  imgA.style.opacity         = '1';
-  imgB.style.opacity         = '0';
-  caption.textContent        = slide.caption;
+  bgA.style.backgroundImage = `url('${slide.src}')`;
+  imgA.src                  = slide.src;
+  bgA.style.opacity         = '1';
+  bgB.style.opacity         = '0';
+  imgA.style.opacity        = '1';
+  imgB.style.opacity        = '0';
 }
 
 // ──────────────────────────────────────────────
 // TRANSITION TO NEXT SLIDE
 // Both background and central image swap together
 // ──────────────────────────────────────────────
-async function nextSlide() {
+function nextSlide() {
   if (isAnimating) return;
   isAnimating = true;
 
   const nextIndex = (current + 1) % SLIDES.length;
   const nextSrc   = SLIDES[nextIndex].src;
 
-  // Preload the next image so the swap is crisp
-  await preload(nextSrc);
-
   if (isSlotA) {
-    // A is visible → load next into B, then crossfade B in
     bgB.style.backgroundImage = `url('${nextSrc}')`;
     imgB.src                  = nextSrc;
-
-    // Trigger reflow so the opacity transition fires
     void imgB.offsetWidth;
-
-    bgA.style.opacity = '0';
-    bgB.style.opacity = '1';
+    bgA.style.opacity  = '0';
+    bgB.style.opacity  = '1';
     imgA.style.opacity = '0';
     imgB.style.opacity = '1';
   } else {
-    // B is visible → load next into A, then crossfade A in
     bgA.style.backgroundImage = `url('${nextSrc}')`;
     imgA.src                  = nextSrc;
-
     void imgA.offsetWidth;
-
-    bgB.style.opacity = '0';
-    bgA.style.opacity = '1';
+    bgB.style.opacity  = '0';
+    bgA.style.opacity  = '1';
     imgB.style.opacity = '0';
     imgA.style.opacity = '1';
   }
 
-  // Update caption after a short delay (mid-fade feels natural)
   setTimeout(() => {
-    caption.textContent = SLIDES[nextIndex].caption;
-  }, FADE_DURATION * 0.45);
-
-  // Wait for fade to finish
-  await new Promise(r => setTimeout(r, FADE_DURATION));
-
-  // Flip state
-  isSlotA  = !isSlotA;
-  current  = nextIndex;
-  isAnimating = false;
+    isSlotA     = !isSlotA;
+    current     = nextIndex;
+    isAnimating = false;
+  }, FADE_DURATION);
 }
 
 // ──────────────────────────────────────────────
@@ -145,10 +114,5 @@ async function nextSlide() {
 // ──────────────────────────────────────────────
 (function init() {
   initSlide();
-
-  // Preload the second image immediately so first swap is instant
-  if (SLIDES.length > 1) preload(SLIDES[1].src);
-
-  // Start the slideshow loop
   setInterval(nextSlide, INTERVAL_MS);
 })();
