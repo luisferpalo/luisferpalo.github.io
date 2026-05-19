@@ -1,210 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- EDIT HERE: change the page title shown in the browser tab -->
-  <title>luisferpalo</title>
-
-  <!-- EDIT HERE: short description for search engines and link previews -->
-  <meta name="description" content="Designer and painter based in Madrid." />
-
-  <!-- Google Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cossette+Texte:wght@400;700&family=Cossette+Titre:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Main stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <title>Luis Fernando de Paz López — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;1,9..40,200&display=swap" rel="stylesheet" />
 </head>
-
-
 <body>
-  <div class="page">
-    <!--<header class="topbar">
-       EDIT HERE: site name 
-      <div class="brand">@luisferpalo</div>-->
 
-      <!-- EDIT HERE: top navigation labels 
-      <nav class="topnav">
-        <a href="#information">Obras</a>
-        <a href="#exhibitions">Exhibitions</a>
-        <a href="#visit">Diseñador</a>
-        <a href="#newsletter">Contacto</a>
-        <a href="#about">Sobre mí</a>
-      </nav>
-    </header>-->
+  <!-- ░░ BACKGROUND LAYER ░░ -->
+  <div class="bg-layer" id="bg-a"></div>
+  <div class="bg-layer" id="bg-b"></div>
 
-    <main class="layout">
-      <aside class="sidebar">        
-        <div class="small">
-           <div class="kicker" style="font-family: 'Cossette Titre'; font-size: large;">Luisferpalo</div>
-          <p>Luis Fernando de Paz López (Toledo, 1998)</b> , presenta una larga trayectoria en la pintura que desemboca a día de hoy en una gran ambición artística.
+  <!-- ░░ MAIN LAYOUT ░░ -->
+  <main class="layout">
 
-Con una trayectoria paralela en diseño gráfico e ilustración, desarrolla en su estudio de Madrid diferentes pinturas que despliegan un abanico de pensamiento irracional empujado por la búsqueda consciente de lo bello a través de la libertad expresiva empujada por lo personal.
-
-Su técnica alterna diferentes trazos, capas y colores, generando soluciones con precisión y detalle resultando en imágenes llenas de texturas y profundidad.
-
-La pintura es para el artista el lugar en el que se refugia, experimenta y su vieja amiga con la que dialoga cara a cara.</p>
-          <br>
-          <a href="https://www.instagram.com/luisferpalo/">@luisferpalo</a><br />
-         
-          <a href="tel:+34603524870">603524870</a><br>
-          <a href="mailto:hola@luisferpalo.com">hola@luisferpalo.com</a> <br>
-           Madrid
-          
+    <!-- LEFT PANEL — Identity -->
+    <aside class="panel panel--left" aria-label="Identidad">
+      <div class="panel__inner">
+        <div class="tag-group">
+          <span class="tag tag--name">Luis</span>
         </div>
-       <!--  <nav>
-          <a href="#exhibitions">Obras</a>
-          <a href="#newsletter">Sobre mí</a>
-        </nav>
-
-        EDIT HERE: contact details -->
-
-      </aside>
-
-      <div class="content">
-       
-
-        <section class="section" id="exhibitions">
-          <div class="kicker">Obras</div>
-
-          <!--
-            EDIT HERE: exhibition gallery items
-            - Replace image paths in src and data-full
-            - Replace alt text
-            - Replace title/year in .meta
-            - You can duplicate an <a class="image-post">...</a> block to add more items
-            - Available size classes: tall, square, wide
-          -->
-          <div class="image-posts">
-            <a class="image-post tall" href="#" data-full="assets/img/exhibition-1.svg">
-              <img src="assets/img/01.png" alt="SCHIRCH exhibition" />
-              <span class="meta"><span>FIGURA II</span><span>2025</span></span>
-            </a>
-
-            <a class="image-post tall" href="#" data-full="assets/img/exhibition-1.svg">
-              <img src="assets/img/02.jpg" alt="SCHIRCH exhibition" />
-              <span class="meta"><span>FIGURA II</span><span>2025</span></span>
-            </a>
-
-            <a class="image-post tall" href="#" data-full="assets/img/exhibition-1.svg">
-              <img src="assets/img/03.png" alt="SCHIRCH exhibition" />
-              <span class="meta"><span>FIGURA II</span><span>2025</span></span>
-            </a>
-
-            <a class="image-post tall" href="#" data-full="assets/img/exhibition-1.svg">
-              <img src="assets/img/04.png" alt="SCHIRCH exhibition" />
-              <span class="meta"><span>FIGURA II</span><span>2025</span></span>
-            </a>
-
-            <a class="image-post tall" href="#" data-full="assets/img/exhibition-1.svg">
-              <img src="assets/img/05.png" alt="SCHIRCH exhibition" />
-              <span class="meta"><span>FIGURA II</span><span>2025</span></span>
-            </a>
-
-            <a class="image-post tall" href="#" data-full="assets/img/exhibition-1.svg">
-              <img src="assets/img/06.png" alt="SCHIRCH exhibition" />
-              <span class="meta"><span>FIGURA II</span><span>2025</span></span>
-            </a>
-
-            <a class="image-post tall" href="#" data-full="assets/img/exhibition-1.svg">
-              <img src="assets/img/02.png" alt="SCHIRCH exhibition" />
-              <span class="meta"><span>FIGURA II</span><span>2025</span></span>
-            </a>
-              <a class="image-post tall" href="#" data-full="assets/img/exhibition-1.svg">
-              <img src="assets/img/08.jpg" alt="SCHIRCH exhibition" />
-              <span class="meta"><span>FIGURA II</span><span>2025</span></span>
-            </a>
-
-  
-
-          </div>
-        </section>
-<!--
-        <section class="section grid-2 visit" id="visit">
-          <div>
-            <div class="kicker">How to visit?</div>
-
-           
-            <h2>By appointment only</h2>
-            <p>Hours: open most weekends, 2PM – 8PM.</p>
-            <p>Schedule your visit by email, Instagram, or your booking tool.</p>
-
-            
-            <a class="button" href="mailto:contact@yourgallery.com">Book a visit</a>
-          </div>
-
-          <div>
-             
-            <p class="muted">Address</p>
-            <p>75009 Paris<br />France</p>
-            <p class="muted">Please be mindful of neighbors when accessing the gallery.</p>
-          </div>
-        </section>-->
-
-        <!--
-          EDIT HERE: featured sections below the gallery.
-          Replace the image, section label and alt text.
-          You can also remove any section you do not need.
-        -->
-        <section class="section exhibition-copy" id="current-show">
-          <div class="kicker">Sobre mí</div>
-<h1>Luis, Luisfer o Luis Fernando</h1>
-          <img class="hero-image" src="assets/img/00.jpg" style="border-radius: 10px;" alt="Current exhibition" />
-      
-          
-
-          <!-- EDIT HERE: intro paragraph 
-          <p class="lede">Una larga trayectoria en la pintura desde pequeño que desemboca a día de hoy en una gran ambición artística. Casi 9 años trabajando en la comunicación visual. Actualmente en Prodigioso Volcán, mientras exploro el potencial de la ilustración, la tipografía y el diseño.</p>
-        --></section>
-          
-        </section>
-<!--
-        <section class="section exhibition-copy" id="show-2">
-          <div class="kicker">Archived exhibition</div>
-          <img class="hero-image" src="assets/img/feature-2.svg" alt="Archived exhibition" />
-        </section>
-
-        <section class="section exhibition-copy" id="show-3">
-          <div class="kicker">Archived exhibition</div>
-          <img class="hero-image" src="assets/img/feature-3.svg" alt="Archived exhibition" />
-        </section>
--->
-        <section class="section newsletter" id="newsletter">
-          <div class="kicker">Última exposición</div>
-
-          <!-- EDIT HERE: newsletter content -->
-          <h2>El Umbral de Primavera</h2>
-          <p>Diciembre 2025 - Enero 2026</p>
-          <a class="button" href="https://elumbraldeprimavera.com/ambigu/luis-fernando-de-paz/">Artículo</a>
-        </section>
- <!--
-        <section class="section about" id="about">
-          <div class="kicker">About</div>
-
-          EDIT HERE: about content 
-          <h2>A quiet, image-led gallery site</h2>
-          <p>Replace this text with your own gallery description, curatorial statement or project presentation.</p>
-        </section>-->
+        <div class="tag-group tag-group--alt">
+          <span class="tag tag--alias">Luisfer</span>
+        </div>
+        <div class="tag-group">
+          <span class="tag tag--full">Luis Fernando</span>
+        </div>
       </div>
-    </main>
+    </aside>
 
-    <footer class="footer">
-      <!-- EDIT HERE: footer text -->
-      <div>© LUISFERPALO</div>
-      <div>2026</div>
-    </footer>
-  </div>
+    <!-- CENTER — Featured Image + Caption -->
+    <section class="panel panel--center" aria-label="Imagen destacada">
+      <div class="image-frame">
+        <div class="image-wrap">
+          <img class="featured-img img-slot img-a" id="img-a" src="" alt="Portfolio image" />
+          <img class="featured-img img-slot img-b" id="img-b" src="" alt="Portfolio image" />
+        </div>
+      </div>
+    </section>
 
-  <!-- Lightbox used when clicking exhibition images -->
-  <div class="gallery-lightbox" id="gallery-lightbox" aria-hidden="true">
-    <button type="button" aria-label="Close gallery">×</button>
-    <img alt="Expanded exhibition image" />
-  </div>
+    <!-- RIGHT PANEL — Contact -->
+    <aside class="panel panel--right" aria-label="Contacto">
+      <div class="panel__inner panel__inner--right">
+        <div class="contact-group">
+          <a href="https://instagram.com/luisferpalo" class="tag tag--contact" target="_blank" rel="noopener">luisferpalo</a>
+          <a href="mailto:hola@luisferpalo.com" class="tag tag--contact">hola@luisferpalo.com</a>
+          <a href="tel:+34603524870" class="tag tag--contact">+34 603 52 48 70</a>
+        </div>
+      </div>
+    </aside>
 
-  <!-- Main JavaScript -->
-  <script src="assets/js/main.js"></script>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
